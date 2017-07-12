@@ -12,10 +12,28 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    //    // SAVE CONTEXT VARIABLE@@
+    lazy var coreDataStack = CoreDataStack()
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        UINavigationBar.appearance().barTintColor = #colorLiteral(red: 0.9764705896, green: 0.850980401, blue: 0.5490196347, alpha: 1) //change color to app bar everywhere
+        UINavigationBar.appearance().tintColor = .white
+        
+        //create overlay for status bar
+       let statusBarView = UIView(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.size.width, height: 20))
+        statusBarView.backgroundColor = #colorLiteral(red: 0.9764705896, green: 0.850980401, blue: 0.5490196347, alpha: 1)
+        
+        // set overlay on its position
+        self.window?.rootViewController?.view.insertSubview(statusBarView, at: 1)
+        
+        
+        //change title font on status bar
+        if let barFont = UIFont(name: "AppleSDGothicNeo-Light", size: 24){
+            UINavigationBar.appearance().titleTextAttributes = [NSForegroundColorAttributeName : UIColor.white, NSFontAttributeName : barFont]
+        }
+        
         return true
     }
 
@@ -39,6 +57,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func applicationWillTerminate(_ application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+        
+        // SAVE CONTEXT@@
+        self.coreDataStack.saveContext()
     }
 
 

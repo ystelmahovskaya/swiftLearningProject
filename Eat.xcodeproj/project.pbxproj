@@ -7,13 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AD2429FD1F066D0E0036422A /* RateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2429FC1F066D0E0036422A /* RateViewController.swift */; };
+		AD2429FF1F095C220036422A /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2429FE1F095C220036422A /* MapViewController.swift */; };
+		AD242A021F095DF20036422A /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD242A011F095DF20036422A /* MapKit.framework */; };
+		AD242A041F0C0B280036422A /* NewEateryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD242A031F0C0B280036422A /* NewEateryTableViewController.swift */; };
+		AD242A271F1114370036422A /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD242A261F1114370036422A /* CoreDataStack.swift */; };
+		AD242A2A1F113A630036422A /* Eat.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AD242A281F113A630036422A /* Eat.xcdatamodeld */; };
 		AD7A48FE1F0124170003CDE4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD7A48FD1F0124170003CDE4 /* AppDelegate.swift */; };
-		AD7A49001F0124170003CDE4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD7A48FF1F0124170003CDE4 /* ViewController.swift */; };
 		AD7A49031F0124170003CDE4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD7A49011F0124170003CDE4 /* Main.storyboard */; };
 		AD7A49051F0124170003CDE4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD7A49041F0124170003CDE4 /* Assets.xcassets */; };
 		AD7A49081F0124170003CDE4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD7A49061F0124170003CDE4 /* LaunchScreen.storyboard */; };
 		AD7A49131F0124180003CDE4 /* EatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD7A49121F0124180003CDE4 /* EatTests.swift */; };
 		AD7A491E1F0124180003CDE4 /* EatUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD7A491D1F0124180003CDE4 /* EatUITests.swift */; };
+		AD7A492C1F0126770003CDE4 /* EatTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD7A492B1F0126770003CDE4 /* EatTableViewController.swift */; };
+		AD7A492E1F02484D0003CDE4 /* EatTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD7A492D1F02484D0003CDE4 /* EatTableViewCell.swift */; };
+		AD7A49301F03ADD50003CDE4 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD7A492F1F03ADD50003CDE4 /* DetailViewController.swift */; };
+		AD7A49341F050AFA0003CDE4 /* EatDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD7A49331F050AFA0003CDE4 /* EatDetailTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,9 +43,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AD2429FC1F066D0E0036422A /* RateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RateViewController.swift; sourceTree = "<group>"; };
+		AD2429FE1F095C220036422A /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		AD242A011F095DF20036422A /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		AD242A031F0C0B280036422A /* NewEateryTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewEateryTableViewController.swift; sourceTree = "<group>"; };
+		AD242A261F1114370036422A /* CoreDataStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		AD242A291F113A630036422A /* Eat.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Eat.xcdatamodel; sourceTree = "<group>"; };
 		AD7A48FA1F0124170003CDE4 /* Eat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Eat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD7A48FD1F0124170003CDE4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		AD7A48FF1F0124170003CDE4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		AD7A49021F0124170003CDE4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AD7A49041F0124170003CDE4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AD7A49071F0124170003CDE4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +61,10 @@
 		AD7A49191F0124180003CDE4 /* EatUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EatUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD7A491D1F0124180003CDE4 /* EatUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EatUITests.swift; sourceTree = "<group>"; };
 		AD7A491F1F0124180003CDE4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AD7A492B1F0126770003CDE4 /* EatTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EatTableViewController.swift; sourceTree = "<group>"; };
+		AD7A492D1F02484D0003CDE4 /* EatTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EatTableViewCell.swift; sourceTree = "<group>"; };
+		AD7A492F1F03ADD50003CDE4 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		AD7A49331F050AFA0003CDE4 /* EatDetailTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EatDetailTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD242A021F095DF20036422A /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +93,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AD242A001F095DF20036422A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AD242A011F095DF20036422A /* MapKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		AD7A48F11F0124170003CDE4 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +108,7 @@
 				AD7A49111F0124180003CDE4 /* EatTests */,
 				AD7A491C1F0124180003CDE4 /* EatUITests */,
 				AD7A48FB1F0124170003CDE4 /* Products */,
+				AD242A001F095DF20036422A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -98,8 +126,15 @@
 			isa = PBXGroup;
 			children = (
 				AD7A48FD1F0124170003CDE4 /* AppDelegate.swift */,
-				AD7A48FF1F0124170003CDE4 /* ViewController.swift */,
+				AD242A281F113A630036422A /* Eat.xcdatamodeld */,
 				AD7A49011F0124170003CDE4 /* Main.storyboard */,
+				AD242A031F0C0B280036422A /* NewEateryTableViewController.swift */,
+				AD242A261F1114370036422A /* CoreDataStack.swift */,
+				AD2429FE1F095C220036422A /* MapViewController.swift */,
+				AD2429FC1F066D0E0036422A /* RateViewController.swift */,
+				AD7A49351F050B210003CDE4 /* Detail */,
+				AD7A492D1F02484D0003CDE4 /* EatTableViewCell.swift */,
+				AD7A492B1F0126770003CDE4 /* EatTableViewController.swift */,
 				AD7A49041F0124170003CDE4 /* Assets.xcassets */,
 				AD7A49061F0124170003CDE4 /* LaunchScreen.storyboard */,
 				AD7A49091F0124170003CDE4 /* Info.plist */,
@@ -123,6 +158,15 @@
 				AD7A491F1F0124180003CDE4 /* Info.plist */,
 			);
 			path = EatUITests;
+			sourceTree = "<group>";
+		};
+		AD7A49351F050B210003CDE4 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				AD7A49331F050AFA0003CDE4 /* EatDetailTableViewCell.swift */,
+				AD7A492F1F03ADD50003CDE4 /* DetailViewController.swift */,
+			);
+			name = Detail;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -195,6 +239,11 @@
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = 2DQMEK652W;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					AD7A490D1F0124180003CDE4 = {
 						CreatedOnToolsVersion = 8.3.3;
@@ -262,8 +311,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AD7A49001F0124170003CDE4 /* ViewController.swift in Sources */,
+				AD7A492C1F0126770003CDE4 /* EatTableViewController.swift in Sources */,
 				AD7A48FE1F0124170003CDE4 /* AppDelegate.swift in Sources */,
+				AD7A492E1F02484D0003CDE4 /* EatTableViewCell.swift in Sources */,
+				AD7A49301F03ADD50003CDE4 /* DetailViewController.swift in Sources */,
+				AD242A271F1114370036422A /* CoreDataStack.swift in Sources */,
+				AD7A49341F050AFA0003CDE4 /* EatDetailTableViewCell.swift in Sources */,
+				AD242A041F0C0B280036422A /* NewEateryTableViewController.swift in Sources */,
+				AD242A2A1F113A630036422A /* Eat.xcdatamodeld in Sources */,
+				AD2429FD1F066D0E0036422A /* RateViewController.swift in Sources */,
+				AD2429FF1F095C220036422A /* MapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -514,6 +571,7 @@
 				AD7A49241F0124180003CDE4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AD7A49251F0124180003CDE4 /* Build configuration list for PBXNativeTarget "EatTests" */ = {
 			isa = XCConfigurationList;
@@ -522,6 +580,7 @@
 				AD7A49271F0124180003CDE4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AD7A49281F0124180003CDE4 /* Build configuration list for PBXNativeTarget "EatUITests" */ = {
 			isa = XCConfigurationList;
@@ -530,8 +589,22 @@
 				AD7A492A1F0124180003CDE4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		AD242A281F113A630036422A /* Eat.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				AD242A291F113A630036422A /* Eat.xcdatamodel */,
+			);
+			currentVersion = AD242A291F113A630036422A /* Eat.xcdatamodel */;
+			path = Eat.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = AD7A48F21F0124170003CDE4 /* Project object */;
 }
