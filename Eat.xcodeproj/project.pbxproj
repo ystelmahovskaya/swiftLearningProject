@@ -13,6 +13,8 @@
 		AD242A041F0C0B280036422A /* NewEateryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD242A031F0C0B280036422A /* NewEateryTableViewController.swift */; };
 		AD242A271F1114370036422A /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD242A261F1114370036422A /* CoreDataStack.swift */; };
 		AD242A2A1F113A630036422A /* Eat.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AD242A281F113A630036422A /* Eat.xcdatamodeld */; };
+		AD242A2C1F1938750036422A /* ContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD242A2B1F1938750036422A /* ContentViewController.swift */; };
+		AD242A2E1F1938950036422A /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD242A2D1F1938950036422A /* PageViewController.swift */; };
 		AD7A48FE1F0124170003CDE4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD7A48FD1F0124170003CDE4 /* AppDelegate.swift */; };
 		AD7A49031F0124170003CDE4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD7A49011F0124170003CDE4 /* Main.storyboard */; };
 		AD7A49051F0124170003CDE4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD7A49041F0124170003CDE4 /* Assets.xcassets */; };
@@ -49,6 +51,8 @@
 		AD242A031F0C0B280036422A /* NewEateryTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewEateryTableViewController.swift; sourceTree = "<group>"; };
 		AD242A261F1114370036422A /* CoreDataStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
 		AD242A291F113A630036422A /* Eat.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Eat.xcdatamodel; sourceTree = "<group>"; };
+		AD242A2B1F1938750036422A /* ContentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentViewController.swift; sourceTree = "<group>"; };
+		AD242A2D1F1938950036422A /* PageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
 		AD7A48FA1F0124170003CDE4 /* Eat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Eat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD7A48FD1F0124170003CDE4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AD7A49021F0124170003CDE4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -101,6 +105,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		AD242A2F1F1938A00036422A /* Page */ = {
+			isa = PBXGroup;
+			children = (
+				AD242A2B1F1938750036422A /* ContentViewController.swift */,
+				AD242A2D1F1938950036422A /* PageViewController.swift */,
+			);
+			name = Page;
+			sourceTree = "<group>";
+		};
 		AD7A48F11F0124170003CDE4 = {
 			isa = PBXGroup;
 			children = (
@@ -128,6 +141,7 @@
 				AD7A48FD1F0124170003CDE4 /* AppDelegate.swift */,
 				AD242A281F113A630036422A /* Eat.xcdatamodeld */,
 				AD7A49011F0124170003CDE4 /* Main.storyboard */,
+				AD242A2F1F1938A00036422A /* Page */,
 				AD242A031F0C0B280036422A /* NewEateryTableViewController.swift */,
 				AD242A261F1114370036422A /* CoreDataStack.swift */,
 				AD2429FE1F095C220036422A /* MapViewController.swift */,
@@ -314,11 +328,13 @@
 				AD7A492C1F0126770003CDE4 /* EatTableViewController.swift in Sources */,
 				AD7A48FE1F0124170003CDE4 /* AppDelegate.swift in Sources */,
 				AD7A492E1F02484D0003CDE4 /* EatTableViewCell.swift in Sources */,
+				AD242A2E1F1938950036422A /* PageViewController.swift in Sources */,
 				AD7A49301F03ADD50003CDE4 /* DetailViewController.swift in Sources */,
 				AD242A271F1114370036422A /* CoreDataStack.swift in Sources */,
 				AD7A49341F050AFA0003CDE4 /* EatDetailTableViewCell.swift in Sources */,
 				AD242A041F0C0B280036422A /* NewEateryTableViewController.swift in Sources */,
 				AD242A2A1F113A630036422A /* Eat.xcdatamodeld in Sources */,
+				AD242A2C1F1938750036422A /* ContentViewController.swift in Sources */,
 				AD2429FD1F066D0E0036422A /* RateViewController.swift in Sources */,
 				AD2429FF1F095C220036422A /* MapViewController.swift in Sources */,
 			);
