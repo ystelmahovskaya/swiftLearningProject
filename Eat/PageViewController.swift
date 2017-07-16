@@ -42,6 +42,13 @@ self.dataSource = self
         
      return contentVC
     }
+    
+    
+    func nextVC(atIndex index:Int){
+        if let contentVC = displayViewController(atIndex: index+1){
+        setViewControllers([contentVC], direction: .forward, animated: true, completion: nil)
+        }
+    }
 
     /*
     // MARK: - Navigation
@@ -68,4 +75,13 @@ extension PageViewController:UIPageViewControllerDataSource {
         return   displayViewController(atIndex: index)
 
     }
+    
+//    //indicates page with points downstears
+//    func presentationCount(for pageViewController: UIPageViewController) -> Int {
+//        return headersArray.count
+//    }
+//    func presentationIndex(for pageViewController: UIPageViewController) -> Int {
+//        let contentVC = storyboard?.instantiateViewController(withIdentifier: "contentViewController") as? ContentViewController
+//        return (contentVC?.index)!
+//    }
 }
