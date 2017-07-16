@@ -112,7 +112,18 @@ class EatTableViewController: UITableViewController, NSFetchedResultsControllerD
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
+        
+        //get info if pages was watched
+        let userDefaults = UserDefaults.standard
+        let wasIntroWatched = userDefaults.bool(forKey: "wasIntroWatched")
+        
+        guard !wasIntroWatched else {
+            return
+        }
+        
+        
         //loads page view controller
+        
         
         if let pageViewController = storyboard?.instantiateViewController(withIdentifier: "pageViewController") as? PageViewController {
             present(pageViewController, animated: true, completion: nil)
