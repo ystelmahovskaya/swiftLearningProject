@@ -213,6 +213,11 @@ class EatTableViewController: UITableViewController, NSFetchedResultsControllerD
         }
         return cell
     }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        //убирает выдыление пункта после возвращения на основной экран
+        tableView.deselectRow(at: indexPath, animated: true)
+    }
    
     //ALERT 
 //    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {

@@ -21,12 +21,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         UINavigationBar.appearance().barTintColor = #colorLiteral(red: 0.9764705896, green: 0.850980401, blue: 0.5490196347, alpha: 1) //change color to app bar everywhere
         UINavigationBar.appearance().tintColor = .white
         
+        UITabBar.appearance().tintColor = .white
+        UITabBar.appearance().barTintColor = #colorLiteral(red: 0.721568644, green: 0.8862745166, blue: 0.5921568871, alpha: 1)
+        UITabBar.appearance().selectionIndicatorImage = UIImage(named: "tabSelectBG")
+        
         //create overlay for status bar
        let statusBarView = UIView(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.size.width, height: 20))
         statusBarView.backgroundColor = #colorLiteral(red: 0.9764705896, green: 0.850980401, blue: 0.5490196347, alpha: 1)
         
         // set overlay on its position
-        self.window?.rootViewController?.view.insertSubview(statusBarView, at: 1)
+        self.window?.rootViewController?.view.insertSubview(statusBarView, at: 0)
         
         
         //change title font on status bar
