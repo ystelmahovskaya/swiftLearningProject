@@ -17,7 +17,11 @@ class PageViewController: UIPageViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 self.dataSource = self
-        // Do any additional setup after loading the view.
+        //download first controller
+        if let firstVC = displayViewController(atIndex: 0){
+        setViewControllers([firstVC], direction: .forward, animated: true, completion: nil)
+        }
+    
     }
 
     override func didReceiveMemoryWarning() {

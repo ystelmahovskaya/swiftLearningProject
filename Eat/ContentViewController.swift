@@ -23,6 +23,9 @@ class ContentViewController: UIViewController {
     
     override func viewDidLoad() {
                super.viewDidLoad()
+        headerLabel.text = header
+        subHeaderLabel.text = subHeader
+        imageView.image = UIImage(named: imageFile)
 
         // Do any additional setup after loading the view.
     }

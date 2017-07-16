@@ -109,6 +109,17 @@ class EatTableViewController: UITableViewController, NSFetchedResultsControllerD
         }
         
     }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        //loads page view controller
+        
+        if let pageViewController = storyboard?.instantiateViewController(withIdentifier: "pageViewController") as? PageViewController {
+            present(pageViewController, animated: true, completion: nil)
+        }
+        
+        
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
